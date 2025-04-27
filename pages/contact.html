@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Philadelphia Dental Offices</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="description" content="Contact Philadelphia Dental Offices to schedule an appointment or ask questions. We are here to help with your dental needs.">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="insurance.html">Insurance</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Philadelphia Dental Offices</h1>
+        <p>We are here to help! Please fill out the form below to schedule an appointment or ask any questions you may have. We will get back to you as soon as possible.</p>
+
+        <section class="contact-form">
+            <!-- Form action points to a placeholder. Replace YOUR_EMAIL with the actual recipient email for services like Formspree -->
+            <!-- Or replace with your custom backend endpoint -->
+            <form id="contactForm" action="https://formspree.io/f/YOUR_EMAIL_OR_ENDPOINT" method="POST">
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <!-- Add hidden field for subject if needed by the form service -->
+                <input type="hidden" name="_subject" value="New Contact Form Submission from Philadelphia Dental Offices">
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+                <p style="font-size: 0.8rem; margin-top: 1rem;">Note: This form is set up to work with a service like Formspree or a custom backend. You need to replace the placeholder URL in the form's 'action' attribute with your actual endpoint or Formspree link (using dentalofficenetwork@gmail.com) for email sending to function.</p>
+            </form>
+        </section>
+
+        <section>
+            <h2>Other Ways to Reach Us</h2>
+            <p><strong>Phone:</strong> (Please add phone number)</p>
+            <p><strong>Email:</strong> (Please add email address or use the form)</p>
+            <p><strong>Address:</strong> (Please add physical address)</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>This website is an affiliate site. We may earn commissions from qualifying purchases or referrals.</p>
+        <p>Copyright &copy; 2024 philadelphiadentaloffices.com</p>
+        <p>Built and Managed by <a href="http://dentalofficenetwork.com" target="_blank">Dental Office Network</a></p>
+        <p>
+            <a href="privacy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms and Conditions</a>
+        </p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
